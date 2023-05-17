@@ -15,5 +15,6 @@ export default defineConfig({
       },
     }),
   ],
+  base: "/client/",
   server: { port: 3000 },
 });

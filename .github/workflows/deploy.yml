@@ -24,7 +24,7 @@ jobs:
 
       - name: Build project
         run: 
-          yarn 
+          npm install 
           yarn build
         env:
           VITE_API_URL: ${{ secrets.VITE_API_URL }}

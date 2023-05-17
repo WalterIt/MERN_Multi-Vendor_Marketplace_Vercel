@@ -26,8 +26,7 @@ jobs:
         run: |
             yarn install
             yarn run build
-        env:
-          VITE_API_URL: ${{ secrets.VITE_API_URL }}
+        env: VITE_API_URL: ${{ secrets.VITE_API_URL }}
 
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v2
@@ -52,5 +51,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: gh-pages
           publish_dir: ./build

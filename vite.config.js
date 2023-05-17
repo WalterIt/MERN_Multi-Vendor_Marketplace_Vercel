@@ -15,6 +15,6 @@ export default defineConfig({
       },
     }),
   ],
-  base: "/client/",
+  base: "/MERN_Multi-Vendor_Marketplace_Vercel",
   server: { port: 3000 },
 });
